@@ -1,0 +1,30 @@
+{
+  "name": "movingimage/video-manager-meta",
+  "description": "Meta-library for providing common interfaces between all video manager clients",
+  "type": "library",
+  "license": "BSD 3-Clause License",
+  "authors": [
+    {
+      "name": "Ruben Knol",
+      "email": "ruben.knol@movingimage.com"
+    }
+  ],
+  "require": {
+    "php": "^5.5 || ^7.0",
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^1.12",
+    "phpunit/phpunit": ">=4.5"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "MovingImage\\Meta\\": ""
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MovingImage\\Test\\Meta": "tests"
+    }
+  }
+}
