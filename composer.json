@@ -21,10 +21,5 @@
     "psr-4": {
       "MovingImage\\Meta\\": "lib"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "MovingImage\\Test\\Meta\\": "tests"
-    }
   }
 }
