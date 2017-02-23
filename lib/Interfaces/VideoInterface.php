@@ -76,6 +76,11 @@ interface VideoInterface
     public function getStatus();
 
     /**
+     * @return int
+     */
+    public function getViews();
+
+    /**
      * @return bool
      */
     public function isPublished();
