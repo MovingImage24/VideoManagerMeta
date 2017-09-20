@@ -4,7 +4,6 @@ namespace MovingImage\Meta\Interfaces;
 
 /**
  * Interface AttachmentInterface.
- *
  */
 interface AttachmentInterface
 {
