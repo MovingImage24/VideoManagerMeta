@@ -3,7 +3,7 @@
 namespace MovingImage\Meta\Enums;
 
 /**
- * Defines possible values for the publication_state property
+ * Defines possible values for the publication_state property.
  */
 class PublicationState implements EnumInterface
 {
