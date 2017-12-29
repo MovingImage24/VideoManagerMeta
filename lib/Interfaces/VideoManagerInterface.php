@@ -8,7 +8,7 @@ namespace MovingImage\Meta\Interfaces;
 interface VideoManagerInterface
 {
     /**
-     * @return string
+     * @return int
      */
     public function getId();
 
