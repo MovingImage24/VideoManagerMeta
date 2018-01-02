@@ -65,7 +65,7 @@ interface ChannelInterface
      *
      * @return ChannelInterface
      */
-    public function setParent(ChannelInterface $parent);
+    public function setParent(self $parent);
 
     /**
      * @return ChannelInterface[]
@@ -77,12 +77,12 @@ interface ChannelInterface
      *
      * @return ChannelInterface
      */
-    public function addChild(ChannelInterface $child);
+    public function addChild(self $child);
 
     /**
      * @param ChannelInterface $child
      *
      * @return ChannelInterface
      */
-    public function removeChild(ChannelInterface $child);
+    public function removeChild(self $child);
 }
