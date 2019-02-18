@@ -84,4 +84,9 @@ interface VideoInterface
      * @return bool
      */
     public function isPublished();
+
+    /**
+     * @return bool
+     */
+    public function isDownloadable();
 }
