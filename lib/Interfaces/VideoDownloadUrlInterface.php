@@ -10,40 +10,25 @@ interface VideoDownloadUrlInterface
     /**
      * @return string
      */
-    public function getQuality()
-    {
-        return $this->quality;
-    }
+    public function getQuality();
 
     /**
      * @return string
      */
-    public function getProfileKey()
-    {
-        return $this->profileKey;
-    }
+    public function getProfileKey();
 
     /**
      * @return string
      */
-    public function getFileExtension()
-    {
-        return $this->fileExtension;
-    }
+    public function getFileExtension();
 
     /**
      * @return string
      */
-    public function getUrl()
-    {
-        return $this->url;
-    }
+    public function getUrl();
 
     /**
      * @return int
      */
-    public function getFileSize()
-    {
-        return $this->fileSize;
-    }
+    public function getFileSize();
 }
