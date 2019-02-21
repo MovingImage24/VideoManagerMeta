@@ -5,7 +5,7 @@ namespace MovingImage\Meta\Interfaces;
 /**
  * Interface VideoDownloadUrl.
  */
-class VideoDownloadUrlInterface
+interface VideoDownloadUrlInterface
 {
     /**
      * @return string
