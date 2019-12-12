@@ -47,4 +47,6 @@ interface VideoInterface
     public function getViews(): int;
 
     public function isPublished(): bool;
+
+    public function isDownloadable(): bool;
 }
