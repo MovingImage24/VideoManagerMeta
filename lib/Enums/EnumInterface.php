@@ -6,8 +6,6 @@ interface EnumInterface
 {
     /**
      * Returns all the possible values for this enum.
-     *
-     * @return array
      */
-    public static function getValues();
+    public static function getValues(): array;
 }

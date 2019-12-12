@@ -4,13 +4,7 @@ namespace MovingImage\Meta\Interfaces;
 
 interface CustomMetaDataInterface
 {
-    /**
-     * @return string
-     */
-    public function getKey();
+    public function getKey(): string;
 
-    /**
-     * @return string
-     */
-    public function getValue();
+    public function getValue(): string;
 }

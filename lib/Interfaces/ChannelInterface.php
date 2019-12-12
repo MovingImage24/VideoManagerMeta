@@ -2,87 +2,34 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Defines the contract for the implementations of the Channel entity.
- */
 interface ChannelInterface
 {
-    /**
-     * @return int
-     */
-    public function getId();
+    public function getId(): int;
 
-    /**
-     * @param int $id
-     *
-     * @return ChannelInterface
-     */
-    public function setId($id);
+    public function setId(int $id): self;
 
-    /**
-     * @return string
-     */
-    public function getName();
+    public function getName(): string;
 
-    /**
-     * @param string $name
-     *
-     * @return ChannelInterface
-     */
-    public function setName($name);
+    public function setName(string $name): self;
 
-    /**
-     * @return string
-     */
-    public function getDescription();
+    public function getDescription(): string;
 
-    /**
-     * @param string $description
-     *
-     * @return ChannelInterface
-     */
-    public function setDescription($description);
+    public function setDescription(string $description): self;
 
-    /**
-     * @return array
-     */
-    public function getCustomMetadata();
+    public function getCustomMetadata(): array;
 
-    /**
-     * @param array $customMetadata
-     *
-     * @return ChannelInterface
-     */
-    public function setCustomMetadata($customMetadata);
+    public function setCustomMetadata(array $customMetadata): self;
 
-    /**
-     * @return ChannelInterface
-     */
-    public function getParent();
+    public function getParent(): self;
 
-    /**
-     * @param ChannelInterface $parent
-     *
-     * @return ChannelInterface
-     */
-    public function setParent(self $parent);
+    public function setParent(self $parent): self;
 
     /**
      * @return ChannelInterface[]
      */
-    public function getChildren();
+    public function getChildren(): array;
 
-    /**
-     * @param ChannelInterface $child
-     *
-     * @return ChannelInterface
-     */
-    public function addChild(self $child);
+    public function addChild(self $child): self;
 
-    /**
-     * @param ChannelInterface $child
-     *
-     * @return ChannelInterface
-     */
-    public function removeChild(self $child);
+    public function removeChild(self $child): self;
 }

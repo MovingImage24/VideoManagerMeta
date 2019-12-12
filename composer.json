@@ -5,12 +5,12 @@
   "license": "BSD 3-Clause License",
   "authors": [
     {
-      "name": "Ruben Knol",
-      "email": "ruben.knol@movingimage.com"
+      "name": "Movingimage",
+      "email": "developer@movingimage.com"
     }
   ],
   "require": {
-    "php": "^5.5 || ^7.0",
+    "php": "^7.2",
     "psr/log": "^1.0"
   },
   "require-dev": {

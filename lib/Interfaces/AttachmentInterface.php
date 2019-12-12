@@ -2,28 +2,13 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Interface AttachmentInterface.
- */
 interface AttachmentInterface
 {
-    /**
-     * @return string
-     */
-    public function getId();
+    public function getId(): string;
 
-    /**
-     * @return string
-     */
-    public function getFileName();
+    public function getFileName(): string;
 
-    /**
-     * @return string
-     */
-    public function getDownloadUrl();
+    public function getDownloadUrl(): string;
 
-    /**
-     * @return int
-     */
-    public function getFileSize();
+    public function getFileSize(): int;
 }

@@ -2,19 +2,13 @@
 
 namespace MovingImage\Meta\Enums;
 
-/**
- * Defines possible values for the publication_state property.
- */
 class PublicationState implements EnumInterface
 {
-    const PUBLISHED = 'published';
-    const NOT_PUBLISHED = 'not_published';
-    const ALL = 'all';
+    public const PUBLISHED = 'published';
+    public const NOT_PUBLISHED = 'not_published';
+    public const ALL = 'all';
 
-    /**
-     * {@inheritdoc}
-     */
-    public static function getValues()
+    public static function getValues(): array
     {
         return [
             self::PUBLISHED,

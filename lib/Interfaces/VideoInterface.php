@@ -2,12 +2,8 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Common interface that all Video Manager API clients have to
- * implement to normalise the Video objects they create.
- *
- * @author Ruben Knol <ruben.knol@movingimage.com>
- */
+use DateTime;
+
 interface VideoInterface
 {
     const STATUS_NOT_PUBLISHED = 0;
@@ -15,73 +11,40 @@ interface VideoInterface
     const STATUS_LOCKED = 2;
     const STATUS_GEOPROTECTED = 3;
 
-    /**
-     * @return string
-     */
-    public function getId();
+    public function getId(): string;
 
-    /**
-     * @return string
-     */
-    public function getTitle();
+    public function getTitle(): string;
 
-    /**
-     * @return string
-     */
-    public function getDescription();
+    public function getDescription(): string;
 
-    /**
-     * @return string
-     */
-    public function getThumbnail();
+    public function getThumbnail(): string;
 
-    /**
-     * @return int
-     */
-    public function getLength();
+    public function getLength(): int;
 
-    /**
-     * @return \DateTime
-     */
-    public function getCreatedDate();
+    public function getCreatedDate(): DateTime;
 
-    /**
-     * @return \DateTime
-     */
-    public function getModifiedDate();
+    public function getModifiedDate(): DateTime;
 
-    /**
-     * @return \DateTime
-     */
-    public function getUploadDate();
+    public function getUploadDate(): DateTime;
 
     /**
      * @return CustomMetaDataInterface[]
      */
-    public function getCustomMetadata();
+    public function getCustomMetadata(): array;
 
     /**
      * @return KeywordInterface[]
      */
-    public function getKeywords();
+    public function getKeywords(): array;
 
     /**
      * @return StillInterface[]
      */
-    public function getStills();
+    public function getStills(): array;
 
-    /**
-     * @return int
-     */
-    public function getStatus();
+    public function getStatus(): int;
 
-    /**
-     * @return int
-     */
-    public function getViews();
+    public function getViews(): int;
 
-    /**
-     * @return bool
-     */
-    public function isPublished();
+    public function isPublished(): bool;
 }
