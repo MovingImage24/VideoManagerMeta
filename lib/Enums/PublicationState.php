@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MovingImage\Meta\Enums;
 
 class PublicationState implements EnumInterface
