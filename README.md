@@ -11,7 +11,7 @@ $ composer require movingimage/video-manager-meta
 
 ## Maintainers
 
-* Ruben Knol - ruben.knol@movingimage.com
+* Movingimage - developer@movingimage.com
 
 If you have questions, suggestions or problems, feel free to get in touch with the maintainers by e-mail.
 

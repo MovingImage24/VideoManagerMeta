@@ -2,25 +2,11 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Interface StillInterface.
- *
- * @author Ruben Knol <ruben.knol@movingimage.com>
- */
 interface StillInterface
 {
-    /**
-     * @return string
-     */
-    public function getQuality();
+    public function getQuality(): string;
 
-    /**
-     * @return string
-     */
-    public function getUrl();
+    public function getUrl(): string;
 
-    /**
-     * @return DimensionsInterface
-     */
-    public function getDimensions();
+    public function getDimensions(): DimensionsInterface;
 }

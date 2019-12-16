@@ -4,13 +4,7 @@ namespace MovingImage\Meta\Interfaces;
 
 interface ThumbnailInterface
 {
-    /**
-     * @return int|null
-     */
-    public function getId();
+    public function getId(): ?int;
 
-    /**
-     * @return string|null
-     */
-    public function getUrl();
+    public function getUrl(): ?string;
 }

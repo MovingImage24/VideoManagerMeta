@@ -2,20 +2,9 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Interface KeywordInterface.
- *
- * @author Ruben Knol <ruben.knol@movingimage.com>
- */
 interface KeywordInterface
 {
-    /**
-     * @return int|null
-     */
-    public function getId();
+    public function getId(): ?int;
 
-    /**
-     * @return string
-     */
-    public function getKeyword();
+    public function getKeyword(): string;
 }

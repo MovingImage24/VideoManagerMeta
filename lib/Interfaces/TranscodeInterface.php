@@ -2,7 +2,7 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-interface VideoDownloadUrlInterface
+interface TranscodeInterface
 {
     public function getQuality(): string;
 
@@ -10,7 +10,5 @@ interface VideoDownloadUrlInterface
 
     public function getFileExtension(): string;
 
-    public function getUrl(): string;
-
-    public function getFileSize(): int;
+    public function isCompleted(): bool;
 }

@@ -2,20 +2,9 @@
 
 namespace MovingImage\Meta\Interfaces;
 
-/**
- * Interface DimensionsInterface.
- *
- * @author Ruben Knol <ruben.knol@movingimage.com>
- */
 interface DimensionsInterface
 {
-    /**
-     * @return int
-     */
-    public function getHeight();
+    public function getHeight(): int;
 
-    /**
-     * @return int
-     */
-    public function getWidth();
+    public function getWidth(): int;
 }
