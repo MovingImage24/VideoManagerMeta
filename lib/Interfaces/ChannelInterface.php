@@ -2,6 +2,8 @@
 
 namespace MovingImage\Meta\Interfaces;
 
+use Doctrine\Common\Collections\ArrayCollection;
+
 interface ChannelInterface
 {
     public function getId(): int;
@@ -15,7 +17,7 @@ interface ChannelInterface
     public function getParent(): ?self;
 
     /**
-     * @return ChannelInterface[]
+     * @return ArrayCollection<ChannelInterface>
      */
-    public function getChildren(): array;
+    public function getChildren(): ArrayCollection;
 }
