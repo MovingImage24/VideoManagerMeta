@@ -53,4 +53,6 @@ interface VideoInterface
     public function isPublished(): ?bool;
 
     public function isDownloadable(): ?bool;
+
+    public function isAudioOnly(): bool;
 }
